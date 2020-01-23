@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Starting default emulator"
-android-sdk-linux/tools/emulator/emulator @default -no-window -no-audio 2>&1 &
+android-sdk-linux/tools/emulator @default -no-window -no-audio 2>&1 &
 
 EMU_BOOTED="no"
 while [[ ${EMU_BOOTED} != *"stopped"* ]]; do
