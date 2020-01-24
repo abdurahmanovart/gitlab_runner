@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Starting default emulator"
-android-sdk-linux/emulator/emulator @default -gpu swiftshader_indirect -no-window -no-audio 2>&1 &
+android-sdk-linux/emulator/emulator @default -gpu off -no-window -no-audio 2>&1 &
 
 EMU_BOOTED="no"
 while [[ ${EMU_BOOTED} != *"stopped"* ]]; do
